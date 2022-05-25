@@ -62,18 +62,66 @@
 		9B3362DE2832A9B900EE3980 /* BreakingBad */ = {
 			isa = PBXGroup;
 			children = (
-				9B3362DF2832A9B900EE3980 /* AppDelegate.swift */,
-				9B3362E12832A9B900EE3980 /* SceneDelegate.swift */,
-				9B3362F52832AE2700EE3980 /* CharactersViewController.swift */,
-				9B3362FB28338F2800EE3980 /* NetWorkManager.swift */,
-				9B3362E52832A9B900EE3980 /* Main.storyboard */,
-				9B3362F72832B1CC00EE3980 /* CharacterCell.swift */,
-				9B3362F32832AC9600EE3980 /* Character.swift */,
+				9B336300283E210200EE3980 /* App */,
 				9B3362E82832A9BB00EE3980 /* Assets.xcassets */,
-				9B3362EA2832A9BB00EE3980 /* LaunchScreen.storyboard */,
-				9B3362ED2832A9BB00EE3980 /* Info.plist */,
+				9B336302283E217B00EE3980 /* Models */,
+				9B3362FD283E207C00EE3980 /* Services */,
+				9B3362FF283E20E000EE3980 /* StoryBoards */,
+				9B3362FE283E20A200EE3980 /* ViewControllers */,
+				9B336301283E215300EE3980 /* Views */,
 			);
 			path = BreakingBad;
+			sourceTree = "<group>";
+		};
+		9B3362FD283E207C00EE3980 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9B3362FB28338F2800EE3980 /* NetWorkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9B3362FE283E20A200EE3980 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9B3362F52832AE2700EE3980 /* CharactersViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9B3362FF283E20E000EE3980 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				9B3362E52832A9B900EE3980 /* Main.storyboard */,
+				9B3362EA2832A9BB00EE3980 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		9B336300283E210200EE3980 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9B3362DF2832A9B900EE3980 /* AppDelegate.swift */,
+				9B3362ED2832A9BB00EE3980 /* Info.plist */,
+				9B3362E12832A9B900EE3980 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9B336301283E215300EE3980 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9B3362F72832B1CC00EE3980 /* CharacterCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9B336302283E217B00EE3980 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9B3362F32832AC9600EE3980 /* Character.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

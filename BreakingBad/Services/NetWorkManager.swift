@@ -6,14 +6,28 @@
 //
 import Foundation
 
+enum NetworkError: Error {
+    case invalidURL
+    case noData
+    case decodingError
+}
+
 class NetWorkManager {
     static let shared = NetWorkManager()
     
-    func fetch(from url: String, with completion: @escaping ([Character]) -> Void) {
-        guard let url = URL(string: url) else { return }
+    let linkURL = "https://www.breakingbadapi.com/api/characters"
+
+    private init() {}
+    
+    func fetch(from url: String, with completion: @escaping (Result<[Character], NetworkError>) -> Void) {
+        guard let url = URL(string: url) else {
+            completion(.failure(.invalidURL))
+            return
+        }
         
         URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {
+                completion(.failure(.noData))
                 print(error?.localizedDescription ?? "No error description")
                 return
             }
@@ -21,13 +35,12 @@ class NetWorkManager {
             do {
                 let character = try JSONDecoder().decode([Character].self, from: data)
                 DispatchQueue.main.async {
-                    completion(character)
+                    completion(.success(character))
                 }
             } catch let error {
+                completion(.failure(.decodingError))
                 print(error.localizedDescription)
             }
         }.resume()
     }
-    
-    init() {}
 }

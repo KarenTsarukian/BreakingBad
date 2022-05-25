@@ -13,7 +13,12 @@ class CharacterCell: UITableViewCell {
     @IBOutlet var birthdayLabel: UILabel!
     @IBOutlet var nicknameLabel: UILabel!
     @IBOutlet var portrayedLabel: UILabel!
-    @IBOutlet var photoView: UIImageView!
+    @IBOutlet var photoView: UIImageView! {
+        didSet {
+            photoView.clipsToBounds = true
+            photoView.layer.cornerRadius = photoView.frame.height / 2
+        }
+    }
     
     func configure (with character: Character) {
         nameLabel.text = "Name: \(character.name)"
