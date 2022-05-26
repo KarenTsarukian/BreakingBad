@@ -15,17 +15,11 @@ class CharactersViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 130
-        tableView.backgroundColor = .black
         
         spinnerView = showSpinner(in: tableView)
         
-        let navBarAppearance = UINavigationBarAppearance()
-        navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-        navBarAppearance.backgroundColor = .black
-        navigationController?.navigationBar.standardAppearance = navBarAppearance
-        navigationController?.navigationBar.barTintColor = .white
-        
-        fetchData(from: NetWorkManager.shared.linkURL)
+        fetch(from: NetworkManager.shared.linkURL)
+//        fetchData(from: NetWorkManager.shared.linkURL)
     }
 
     // MARK: - Table view data source
@@ -52,19 +46,27 @@ class CharactersViewController: UITableViewController {
         
         return activityIndicator
     }
-}
-
-extension CharactersViewController {
-    private func fetchData(from url: String) {
-        NetWorkManager.shared.fetch(from: url) { character in
-            switch character {
-            case .success(let character):
-                self.characters = character
-                self.tableView.reloadData()
-                self.spinnerView?.stopAnimating()
-            case .failure(let error):
-                print(error)
-            }
+    
+    private func fetch(from url: String) {
+        NetworkManager.shared.fetch(from: url) { characters in
+            self.characters = characters
+            self.tableView.reloadData()
+            self.spinnerView?.stopAnimating()
         }
     }
 }
+
+//extension CharactersViewController {
+//    private func fetchData(from url: String) {
+//        NetWorkManager.shared.fetch(from: url) { character in
+//            switch character {
+//            case .success(let character):
+//                self.characters = character
+//                self.tableView.reloadData()
+//                self.spinnerView?.stopAnimating()
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
+//    }
+//}

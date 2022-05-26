@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C693AF2EEAEB2D40DB6CF59 /* Pods_BreakingBad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68FD9226DB93C0C6A890E393 /* Pods_BreakingBad.framework */; };
 		9B3362E02832A9B900EE3980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3362DF2832A9B900EE3980 /* AppDelegate.swift */; };
 		9B3362E22832A9B900EE3980 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3362E12832A9B900EE3980 /* SceneDelegate.swift */; };
 		9B3362E72832A9B900EE3980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B3362E52832A9B900EE3980 /* Main.storyboard */; };
@@ -15,10 +16,12 @@
 		9B3362F42832AC9600EE3980 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3362F32832AC9600EE3980 /* Character.swift */; };
 		9B3362F62832AE2700EE3980 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3362F52832AE2700EE3980 /* CharactersViewController.swift */; };
 		9B3362F82832B1CC00EE3980 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3362F72832B1CC00EE3980 /* CharacterCell.swift */; };
-		9B3362FC28338F2800EE3980 /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3362FB28338F2800EE3980 /* NetWorkManager.swift */; };
+		9B3362FC28338F2800EE3980 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3362FB28338F2800EE3980 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68FD9226DB93C0C6A890E393 /* Pods_BreakingBad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreakingBad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94BC58917DD79BB7CC08E627 /* Pods-BreakingBad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakingBad.release.xcconfig"; path = "Target Support Files/Pods-BreakingBad/Pods-BreakingBad.release.xcconfig"; sourceTree = "<group>"; };
 		9B3362DC2832A9B900EE3980 /* BreakingBad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakingBad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B3362DF2832A9B900EE3980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B3362E12832A9B900EE3980 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +32,8 @@
 		9B3362F32832AC9600EE3980 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		9B3362F52832AE2700EE3980 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		9B3362F72832B1CC00EE3980 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
-		9B3362FB28338F2800EE3980 /* NetWorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
+		9B3362FB28338F2800EE3980 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D2F05B857EEEFF65AFEA6F8F /* Pods-BreakingBad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakingBad.debug.xcconfig"; path = "Target Support Files/Pods-BreakingBad/Pods-BreakingBad.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C693AF2EEAEB2D40DB6CF59 /* Pods_BreakingBad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71FC0F9306F91106297BCF9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68FD9226DB93C0C6A890E393 /* Pods_BreakingBad.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9B3362D32832A9B900EE3980 = {
 			isa = PBXGroup;
 			children = (
 				9B3362DE2832A9B900EE3980 /* BreakingBad */,
 				9B3362DD2832A9B900EE3980 /* Products */,
+				B591B3CEE84D1C2780BDF72F /* Pods */,
+				71FC0F9306F91106297BCF9E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +77,7 @@
 		9B3362DE2832A9B900EE3980 /* BreakingBad */ = {
 			isa = PBXGroup;
 			children = (
+				9B3362ED2832A9BB00EE3980 /* Info.plist */,
 				9B336300283E210200EE3980 /* App */,
 				9B3362E82832A9BB00EE3980 /* Assets.xcassets */,
 				9B336302283E217B00EE3980 /* Models */,
@@ -76,7 +92,7 @@
 		9B3362FD283E207C00EE3980 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				9B3362FB28338F2800EE3980 /* NetWorkManager.swift */,
+				9B3362FB28338F2800EE3980 /* NetworkManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -102,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				9B3362DF2832A9B900EE3980 /* AppDelegate.swift */,
-				9B3362ED2832A9BB00EE3980 /* Info.plist */,
 				9B3362E12832A9B900EE3980 /* SceneDelegate.swift */,
 			);
 			path = App;
@@ -124,6 +139,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		B591B3CEE84D1C2780BDF72F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2F05B857EEEFF65AFEA6F8F /* Pods-BreakingBad.debug.xcconfig */,
+				94BC58917DD79BB7CC08E627 /* Pods-BreakingBad.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B3362F02832A9BB00EE3980 /* Build configuration list for PBXNativeTarget "BreakingBad" */;
 			buildPhases = (
+				EB49BB78E8512FF771351FF2 /* [CP] Check Pods Manifest.lock */,
 				9B3362D82832A9B900EE3980 /* Sources */,
 				9B3362D92832A9B900EE3980 /* Frameworks */,
 				9B3362DA2832A9B900EE3980 /* Resources */,
+				5347A4EDE6E549992075E9C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,6 +216,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5347A4EDE6E549992075E9C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BreakingBad/Pods-BreakingBad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BreakingBad/Pods-BreakingBad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BreakingBad/Pods-BreakingBad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB49BB78E8512FF771351FF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BreakingBad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9B3362D82832A9B900EE3980 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -198,7 +266,7 @@
 				9B3362E02832A9B900EE3980 /* AppDelegate.swift in Sources */,
 				9B3362E22832A9B900EE3980 /* SceneDelegate.swift in Sources */,
 				9B3362F82832B1CC00EE3980 /* CharacterCell.swift in Sources */,
-				9B3362FC28338F2800EE3980 /* NetWorkManager.swift in Sources */,
+				9B3362FC28338F2800EE3980 /* NetworkManager.swift in Sources */,
 				9B3362F62832AE2700EE3980 /* CharactersViewController.swift in Sources */,
 				9B3362F42832AC9600EE3980 /* Character.swift in Sources */,
 			);
@@ -276,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -330,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -342,6 +410,7 @@
 		};
 		9B3362F12832A9BB00EE3980 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2F05B857EEEFF65AFEA6F8F /* Pods-BreakingBad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -371,6 +440,7 @@
 		};
 		9B3362F22832A9BB00EE3980 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94BC58917DD79BB7CC08E627 /* Pods-BreakingBad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
